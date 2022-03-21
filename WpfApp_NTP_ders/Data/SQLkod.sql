@@ -4,7 +4,7 @@ USE VT2022
 GO
 CREATE TABLE [dbo].[Musteri]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+    [Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [ad] VARCHAR(50) NULL, 
     [soyad] VARCHAR(50) NULL, 
     [tel] NCHAR(11) NULL, 
@@ -14,7 +14,7 @@ CREATE TABLE [dbo].[Musteri]
 
 CREATE TABLE [dbo].[Hizmet]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+    [Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [hizmetad] VARCHAR(50) NULL, 
     [fiyat] INT NULL
 )
